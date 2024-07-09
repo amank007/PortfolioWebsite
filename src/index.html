@@ -9,7 +9,7 @@
   </title>
 </head>
 
-<body  class = "text-white" style="background-image: url(./assets/bg.jpg);">
+<body  id = "home" class = "text-white" style="background-image: url(./assets/bg.jpg);">
 
 
   <nav id = "navbar" class = "h-44 content-center pr-8 flex flex-row justify-end flex-wrap gap-9" >
@@ -22,40 +22,37 @@
 
 
 
-  <main id = "home" > 
+  <main id = "homeSection" > 
     <h1 class=" block text-center  text-4xl text-cyan-600   font-bold ">Aman Kumar</h1>
     <div class="w-full h-96 flex justify-center items-top">
       <h1 id="typewriter" class="text-4xl font-bold"></h1>
   </div>
   
 
-  <hr
+  
+  </main>
+
+
+  <hr id = "about"
   class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
 
-
-  </main>
+<div id="outerBoxforabout" class="h-lvh flex felx-col  ">
   
-  <div id="about" class = " flex  flex-row z-0 w-5/6 m-24 h-40 rounded-md outline md:outline-2 outline-whitebg-blue-500 shadow-xl shadow-blue-500/50w3  bg-brown-0 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-100 border border-gray-100">
+  <div id="aboutsection" class = " flex justify-center flex-row p-11  w-5/6 m-auto max-h-full rounded-md outline md:outline-2 outline-whitebg-blue-500 shadow-xl shadow-blue-500/50w3  bg-brown-0 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-100 border border-gray-100">
     <div class="flex-none w-40">Photo</div>
-    <div>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Temporibus voluptates quam iste nobis laboriosam eaque dicta dignissimos,
-     voluptatibus quaerat. Inventore illum necessitatibus repudiandae
-     fugit mollitia ad labore cum delectus fugiat.
-     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-      Voluptatem illum expedita, vitae animi recusandae inventore culpa repellendus 
-      optio. Atque deleniti corrupti
-      ipsum saepe laudantium, alias eos blanditiis incidunt neque natus.
+    <div class="text-xl text-orange-300">
+      Greetings! I'm Aman Kumar, a dedicated Computer Science student at S.H.U.A.T.S., Prayagraj, set to graduate in June 2024. Specializing in cybersecurity and software development, I bring practical experience from my Java Full Stack internship at KodNest. My projects include developing a Thesis Management System and creating a Python-based Malware Log Analysis tool, showcasing my proficiency in Java, Python, and JavaScript. Certified in Ethical Hacking with a strong foundation in cybersecurity, I'm committed to leveraging technology to solve complex challenges.
     </div>
   </div>
 
+</div>
 
 
-  <hr
+  <hr id="skills"
   class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
 
 
-  <div id="skills">
+  <div id="skillsSection">
 
     <div class="grid-cols-1 sm:grid md:grid-cols-2 ">
       <div
@@ -134,12 +131,12 @@
 
 
 
-  <hr
+  <hr id = "projects"
   class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
 
 
 
-  <div id="projects">
+  <div id="projectsSection">
 
 
     <div class="grid grid-cols-1 grid-rows-1 md:grid-cols-2">
@@ -192,27 +189,27 @@
   </div>
 
 
-  <hr
-  class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+  <hr id = "contact"
+  class="my-12 h-px border-t-0" />
 
-  <div id="contact">
+  <div id="contactSection">
 
-    <section class="bg-white dark:bg-gray-900">
+    <section>
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
           <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
           <form action="#" class="space-y-8">
               <div>
                   <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-                  <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                  <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
               </div>
               <div>
                   <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-                  <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                  <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
               </div>
               <div class="sm:col-span-2">
                   <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                  <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                  <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
               </div>
               <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
           </form>
@@ -225,12 +222,12 @@
   <footer class="flex flex-col space-y-10 justify-center m-10">
 
     <nav class="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
-        <a class="hover:text-gray-900" href="#">Home</a>
-        <a class="hover:text-gray-900" href="#">About</a>
-        <a class="hover:text-gray-900" href="#">Services</a>
-        <a class="hover:text-gray-900" href="#">Media</a>
-        <a class="hover:text-gray-900" href="#">Gallery</a>
-        <a class="hover:text-gray-900" href="#">Contact</a>
+        <a class="hover:text-gray-900" href="#home">Home</a>
+        <a class="hover:text-gray-900" href="#about">About</a>
+        <a class="hover:text-gray-900" href="#skills">Skills</a>
+        <a class="hover:text-gray-900" href="#projects">Projects</a>
+        <a class="hover:text-gray-900" href="#">Certificates</a>
+        <a class="hover:text-gray-900" href="#contact">Contact</a>
     </nav>
 
     <div class="flex justify-center space-x-5">
